@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+/*
+   Golden Pulps Reset Style Sheet
+   Filename: gp_reset.css
+*/
+
+
+/* Basic styles to be used with all devices and under all conditions */
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section {
+   display: block;
+}
+
+address, article, aside, blockquote, body, cite,
+div, dl, dt, dd, em, figcaption, figure, footer,
+h1, h2, h3, h4, h5, h6, header, html, img,
+li, main, nav, nav a, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+
+body {
+   line-height: 1.2em;
+   width: 100%;
+}
+
+ul, ol {
+   list-style: none;
+}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav a {
+   text-decoration: none;
+} 
+
+header {
+   height: 20vh;
+   width: 100%;
+   background: url('gp_back1.png');
+   background-size: cover; 
+   background-repeat: no-repeat;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+}
+header > img {
+   width: 30%;
+   height: 20vh;
+}
+.horizontal > ul{
+   width: 100%;
+   display: flex;
+   gap: 1%;
+   justify-content: center;
+   background-color: #dfb24e;
+
+}
+.horizontal > ul > li {
+   width: 100%;
+   text-align: center;
+}
+.horizontal > ul > li:hover{
+   cursor: pointer;
+   box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+}
+.horizontal > ul > li > a{
+   display: inline-flex;
+   color: black;
+   padding: 1.5vh 0;
+   font-size: 18px;
+    font-family: 'Inter Tight';
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: 0%;
+   text-align: center;
+   
+}
+.horizontal {
+   display: flex;
+   justify-content: center;
+}
+h1{
+   color: black;
+   font-size: 26px;
+    font-family: 'Inter Tight';
+   font-weight: 500;
+   line-height: 56px;
+   letter-spacing: 0%;
+   text-align: center;
+}
+.first-section-main-element{
+   display: flex;
+   justify-content: center;
+   margin-left: 3%;
+   width: 97%;
+}
+.first-section{
+   width: 100%;
+}
+.descr-img{
+   display: flex;
+   gap: 2%;
+   margin-top: 1%;
+}
+.descr-img > img {
+   width: 58.5vh;
+   height: 58.5vh;
+   object-fit: cover;
+}
+.gp_main-img{
+   width: 120vh;
+}
+article{
+   width: 30%;
+   background-color: #f3dfb9;
+   padding: 3%;
+}
+.main-footer{
+   width: 100%;
+   color: white;
+   font-size: 18px;
+    font-family: 'Inter Tight';
+   font-weight: 500;
+   line-height: 26px;
+   letter-spacing: 0%;
+   text-align: center;
+   background-color: #1b1b1b;
+}
+article > p {
+   color: black;
+   font-size: 18px;
+    font-family: 'Inter Tight';
+   font-weight: 500;
+   line-height: 26px;
+   letter-spacing: 0%;
+   margin-top: 3%;
+}
+.footers-button{
+   display: flex;
+   justify-content: center;
+   gap: 1%;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.footers-button:hover{
+   cursor: pointer;
+   box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+}
+.main-block{
+   width: 70%;
+}
+
+@media (max-width: 768px) {
+   body{
+      width: 100%;
+   }
+  header {
+   width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+  
+  header > img {
+    width: 80%;
+    height: auto;
+  }
+  .horizontal{
+   display: none;
+  }
+  .horizontal-mobi{
+    display: flex;
+  }
+  .first-section-main-element {
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+    padding: 0 15px;
+    display: block;
+  }
+  h1{
+
+   font-size: 16px;
+   line-height: 20px;
+
+}
+   article > p {
+   line-height: 16px;
+   font-size: 14px;
+   }
+  .main-block {
+    width: 100%;
+  }
+  
+  .gp_main-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .descr-img {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .descr-img > img {
+    width: 100%;
+    height: auto;
+  }
+  
+  article {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .horizontal-mobi > ul {
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+   background-color: #dfb24e;
+   width: 100%;
+  }
+  
+  .horizontal-mobi > ul > li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+   
+   .horizontal-mobi > ul > li > a{
+   display: inline-flex;
+   color: black;
+   padding: 0.5vh 0;
+   font-size: 14px;
+    font-family: 'Inter Tight';
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: 0%;
+   text-align: center;
+   padding: 10px 0;
+   
+}
+
+
+
+.horizontal-mobi {
+   display: flex;
+   justify-content: center;
+}
+
+
+  .first-section-main-element {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footers-button {
+    margin: 20px 0 0 0;
+  }
+}
